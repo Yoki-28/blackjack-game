@@ -2,6 +2,7 @@ const contentElm = document.querySelector('#content-el');
 const cardElm = document.querySelector('#card-el');
 const sumElm = document.querySelector('#sum-el');
 const beginBtn = document.querySelector('#begin-bt');
+const instElm = document.querySelector('#inst-el');
 
 const cardValues = [2,3,4,5,6,7,8,9,10,10,10,10,11];
 let disp_cards = [];
@@ -12,7 +13,7 @@ function getRandomCard()
     return cardValues[Math.trunc(Math.random()*cardValues.length)];
 }
 
-//Function to draw new card from the deck 
+//Function to draw new card from the deck
 function addCard()
 {
     let card = getRandomCard();
@@ -22,7 +23,7 @@ function addCard()
 
 function resetGame() {
     disp_cards = [];
-    beginBtn.innerHTML = "Start New Game";
+    beginBtn.innerHTML = "START NEW GAME";
 }
 
 beginBtn.addEventListener('click',function()
@@ -44,6 +45,8 @@ beginBtn.addEventListener('click',function()
         ans += disp_cards[i];
     }
     sumElm.innerHTML = "Sum : " + ans;
+
+    instElm.classList.add('hidden');
 
     let message = "";
     if(ans < 21)

@@ -1,10 +1,16 @@
 body
 {
-    margin-top: 30vh !important; 
+    margin-top: 30vh !important;
+    margin-bottom: 30vh !important;
     background-image: url('./assets/pexels-mdsnmdsnmdsn-1216346.jpg');
     background-size: cover;
     font-size: larger;
 }
+/* .conatiner-fluid
+{
+    margin-top: 30vh !important;
+    margin-bottom: 30vh !important;
+} */
 .card
 {
     background-color: hwb(72 84% 14% / 0.9);
@@ -20,7 +26,30 @@ button
     width: 200px;
     font-weight: bold !important;
 }
+button:hover 
+{
+    background-color: red !important;
+    color: white !important;
+    transition: 0.5s !important;
+}
 .hidden
 {
     display: none;
+}
+a
+{
+    text-decoration: none;
+    font-size:small;
+    color: black;
+    font-weight:bold !important;
+}
+.border-danger:hover 
+{
+    background-color: red !important;
+    color: white !important;
+    transition: 0.5s !important;
+}
+p
+{
+    text-align: justify;
 }
