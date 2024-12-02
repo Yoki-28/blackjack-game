@@ -1,0 +1,26 @@
+body
+{
+    margin-top: 30vh !important; 
+    background-image: url('./assets/pexels-mdsnmdsnmdsn-1216346.jpg');
+    background-size: cover;
+    font-size: larger;
+}
+.card
+{
+    background-color: hwb(72 84% 14% / 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h1
+{
+    color: red;
+}
+button
+{
+    width: 200px;
+    font-weight: bold !important;
+}
+.hidden
+{
+    display: none;
+}
